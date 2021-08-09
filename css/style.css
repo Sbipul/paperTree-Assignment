@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+body{
+    overflow-x: hidden;
+    font-family: 'Josefin Sans', sans-serif;
+}
+p,h1,h2,h3,h4,h5,h6,ul,li,a{
+    margin: 0;
+    padding: 0;
+}
+ul li a {
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.bg-gray-lite {
+	background: rgb(255, 246, 251);
+}
+.after-before-custom{
+    background: rgb(255, 255, 255);
+}
+.after-before-custom:hover{
+    background-image: url("../img/elevate-sRa7ekP0JA8-unsplash.jpg");
+    background-size: 100%;
+}
+.after-before-custom:hover p{
+    color: white;
+}
+.font-size-custom{
+    font-size: 6.25rem;
+}
+.fs-big{
+    font-size: 3.3rem;
+}
+.after-effect{
+    position: relative;
+}
+.after-effect:hover:after{
+    visibility: visible;
+    opacity: 1;
+}
+.after-effect:hover:before{
+    visibility: visible;
+    opacity: 1;
+}
+.after-effect::after{
+    position: absolute;
+    content: "";
+    height: 30%;
+    top: 20%;
+    width: 5px;
+    background: red;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+.after-effect::before{
+    position: absolute;
+    content: "";
+    height: 30%;
+    bottom: 20%;
+    width: 5px;
+    background: red;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+.main{
+    position: relative;
+}
+.hover-effect :hover p {
+    color: red;
+}
+.hover-effect :hover i {
+    color: red;
+}
+.shadoww{
+    box-shadow: 3px 3px 10px rgb(82, 82, 82), -3px -3px 10px rgb(73, 73, 73);
+    margin-bottom: .7px;
+}
+.hidden-div{
+    position:absolute;
+    top: 85%;
+    left: 10%;
+    /* height: 30%; */
+    width: 80%;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    background: rgb(255, 255, 255);
+    box-shadow: 3px 3px 7px black;
+}
+.decoration {
+    text-decoration: underline;
+}
+.bip2 i:hover{
+    color: red;
+}
+.forI i {
+    background: rgb(7, 14, 31);
+}
+.forI i:hover {
+	background: red;
+	transition: 1s;
+}
+.main:hover span{
+    visibility: visible;
+    opacity: 1;
+}
+.no-bg{
+    background: none;
+}
+.custom-margin-left{
+    margin-left: 20%;
+}
+footer{
+    /* background-image: url("../img/abstract-mash-business-dots-scales-dark-background-with-map-world_23979-232.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background: rgb(2, 28, 63);
+
+}
+.bg-danger{
+    background: red !important;
+}
+
+.custom-hover li {
+    padding: 0px 10px;
+	border-radius: 8px;
+}
+.custom-hover li:hover {
+	background: red;
+}
+.custom-hover li:hover a{
+    color: white !important;
+}
+.list-style-none{
+    list-style: none;
+}
+@media only screen and (max-width: 600px) {
+    .border-radious-custom{
+        width: 100%;
+        height: 100%;
+    }
+  }
+
